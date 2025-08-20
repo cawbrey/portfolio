@@ -21,105 +21,115 @@ const App = () => {
 				flexDirection: 'column',
 				alignItems: 'center',
 				alignContent: 'center',
-				padding: '0px 20px'
+				width: '100%',
 			}}
 		>
 			{/* Container for the TitleBar with controlled width */}
 			<div
 				style={{
 					position: 'fixed',
-					width: '90%',
-					maxWidth: '1200px',
-					zIndex: 100
+					width: '100%',
+					zIndex: 100,
+					display: 'flex',
+					justifyContent: 'center'
 				}}
 			>
-				<Titlebar navLinks={navLinks} />
+				<div style={{ width: '100%', maxWidth: '1200px' }}>
+					<Titlebar navLinks={navLinks} />
+				</div>
 			</div>
 
 			{/* Main Content */}
 			<div
 				style={{
-					// justifyContent: "center",
-					// alignItems: "center",
-					marginBottom: '-20px'
+                    display: 'flex',
+					flexDirection: 'column',
+					alignItems: 'center',
+					justifyContent: "center",
+                    width: '100%',
 				}}
 			>
-				<section
+				<div
 					id='home'
 					style={{
-						paddingTop: '60px',
-						background: '#e7fcff'
+						background: '#e7fcff',
+                        paddingTop: '100px',
+						width: '100%',
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center'
 					}}
 				>
 					<div
 						style={{
-							paddingLeft: '60px',
-							paddingRight: '60px',
-							width: '90vw',
-							marginTop: '60px',
-							maxWidth: '1200px'
+							width: '100%',
+							maxWidth: '1200px',
 						}}
 					>
 						<HomeSection />
 					</div>
 
-					<img src='./waves-1.svg' style={{ width: '100vw', height: 'auto' }} />
-				</section>
+					<img src='./waves-1.svg' style={{height: 'auto', width: '100%' }} />
+				</div>
 
 				<section
 					id='skills'
 					style={{
-						background: '#a7c8cc'
+						background: '#a7c8cc',
+						width: '100%',
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center'
 					}}
 				>
 					<div
 						style={{
-							paddingLeft: '60px',
-							paddingRight: '60px',
-							width: '90vw',
+							width: '100%',
 							maxWidth: '1200px',
-							marginTop: '-24px'
 						}}
 					>
 						<SkillsSection />
 					</div>
 
-					<img src='./waves-2.svg' style={{ width: '100vw', height: 'auto' }} />
+					<img src='./waves-2.svg' style={{ height: 'auto', width: '100%' }} />
 				</section>
 
 				<section
 					id='projects'
 					style={{
-						background: '#69959c'
+						background: '#69959c',
+						width: '100%',
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center'
 					}}
 				>
 					<div
 						style={{
-							paddingLeft: '60px',
-							paddingRight: '60px',
-							width: '90vw',
+							width: '100%',
 							maxWidth: '1200px',
-							marginTop: '-24px'
 						}}
 					>
 						<ProjectsSection />
 					</div>
-					<img src='./waves-3.svg' style={{ width: '100vw', height: 'auto' }} />
+					<img src='./waves-3.svg' style={{ height: 'auto', width: '100%' }} />
 				</section>
 
 				<section
 					id='about'
 					style={{
-						background: '#2b666e'
+						background: '#2b666e',
+						width: '100%',
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+                        paddingBottom: '25vh'
 					}}
 				>
 					<div
 						style={{
-							paddingLeft: '60px',
-							paddingRight: '60px',
-							width: '90vw',
+							width: '100%',
 							maxWidth: '1200px',
-							marginTop: '-24px'
 						}}
 					>
 						<AboutSection />
@@ -130,11 +140,11 @@ const App = () => {
 			{/* Container for the Footer with controlled width */}
 			<div
 				style={{
-					width: '100vw',
-					background: '#2b666e'
+					width: '100%',
+					background: '#2b666e',
 				}}
 			>
-				<Footer />
+                <Footer />
 			</div>
 		</div>
 	);

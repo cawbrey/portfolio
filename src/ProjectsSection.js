@@ -32,7 +32,6 @@ const ProjectsSection = () => {
 		<section
 			id='projects'
 			style={{
-				padding: '60px 20px',
 				textAlign: 'center'
 			}}
 		>

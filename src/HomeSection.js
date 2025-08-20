@@ -8,8 +8,7 @@ const HomeSection = () => {
 				display: 'flex',
 				justifyContent: 'space-between',
 				alignItems: 'center',
-				padding: '60px 20px',
-				height: '50vh'
+				height: '70vh'
 			}}
 		>
 			{/* Left Side - "Hello" */}
@@ -45,15 +44,15 @@ const HomeSection = () => {
 			</div>
 
 			{/* Right Side - Picture */}
-			<div style={{ flex: 1 }}>
+			<div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
 				<img
 					src='./headshot_transparent.png'
 					alt='Carter Awbrey'
 					style={{
-						width: '100%',
-						//maxWidth: "400px",
+						maxWidth: '100%',
+						maxHeight: '100%',
 						borderRadius: '30px',
-						objectFit: 'fill',
+						objectFit: 'contain',
 						boxShadow: '0px 0px 16px rgba(0, 0, 0, 0.4)', // Optional: shadow for depth
 						backgroundColor: '#037583'
 					}}

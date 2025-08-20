@@ -4,8 +4,8 @@ const AboutSection = () => {
 	return (
 		<section
 			style={{
-				padding: '60px 20px', // Padding around the section
-				textAlign: 'center'
+				textAlign: 'center',
+                paddingBottom: '24px'
 			}}
 		>
 			<h1

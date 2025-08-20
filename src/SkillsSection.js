@@ -22,7 +22,6 @@ const SkillsSection = () => {
 		<section
 			id='skills'
 			style={{
-				padding: '60px 20px',
 				textAlign: 'center'
 			}}
 		>
@@ -61,8 +60,6 @@ const SkillsSection = () => {
 							background: '#d3f8fe',
 							borderRadius: '30px',
 							boxShadow: '0 4px 10px rgba(0, 0, 0, 0.4)',
-							// width: "120px",
-							// height: "120px",
 							display: 'flex',
 							alignItems: 'center',
 							justifyContent: 'center',
