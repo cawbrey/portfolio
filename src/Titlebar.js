@@ -30,6 +30,7 @@ const TitleBar = ({ navLinks = [] }) => {
 			{/* Left Section: Your Name */}
 			<a
 				onClick={event => handleNavClick(event, '#home')}
+				href={'#home'}
 				style={{
 					display: 'flex',
 					gap: '16px',
@@ -46,6 +47,7 @@ const TitleBar = ({ navLinks = [] }) => {
 						height: '40px',
 						borderRadius: '30px'
 					}}
+					alt='Logo'
 				/>
 				Carter Awbrey
 			</a>

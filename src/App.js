@@ -69,7 +69,7 @@ const App = () => {
 						<HomeSection />
 					</div>
 
-					<img src='./waves-1.svg' style={{ height: 'auto', width: '100%' }} />
+					<img src='./waves-1.svg' style={{ height: 'auto', width: '100%' }} alt='Waves' />
 				</div>
 
 				<section
@@ -91,7 +91,7 @@ const App = () => {
 						<SkillsSection />
 					</div>
 
-					<img src='./waves-2.svg' style={{ height: 'auto', width: '100%' }} />
+					<img src='./waves-2.svg' style={{ height: 'auto', width: '100%' }} alt='Waves' />
 				</section>
 
 				<section
@@ -112,7 +112,7 @@ const App = () => {
 					>
 						<ProjectsSection />
 					</div>
-					<img src='./waves-3.svg' style={{ height: 'auto', width: '100%' }} />
+					<img src='./waves-3.svg' style={{ height: 'auto', width: '100%' }} alt='Waves' />
 				</section>
 
 				<section
