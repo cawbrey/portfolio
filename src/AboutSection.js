@@ -5,7 +5,7 @@ const AboutSection = () => {
 		<section
 			style={{
 				textAlign: 'center',
-                paddingBottom: '24px'
+				paddingBottom: '24px'
 			}}
 		>
 			<h1

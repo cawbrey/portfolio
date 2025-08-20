@@ -21,7 +21,7 @@ const App = () => {
 				flexDirection: 'column',
 				alignItems: 'center',
 				alignContent: 'center',
-				width: '100%',
+				width: '100%'
 			}}
 		>
 			{/* Container for the TitleBar with controlled width */}
@@ -42,18 +42,18 @@ const App = () => {
 			{/* Main Content */}
 			<div
 				style={{
-                    display: 'flex',
+					display: 'flex',
 					flexDirection: 'column',
 					alignItems: 'center',
-					justifyContent: "center",
-                    width: '100%',
+					justifyContent: 'center',
+					width: '100%'
 				}}
 			>
 				<div
 					id='home'
 					style={{
 						background: '#e7fcff',
-                        paddingTop: '100px',
+						paddingTop: '100px',
 						width: '100%',
 						display: 'flex',
 						flexDirection: 'column',
@@ -63,13 +63,13 @@ const App = () => {
 					<div
 						style={{
 							width: '100%',
-							maxWidth: '1200px',
+							maxWidth: '1200px'
 						}}
 					>
 						<HomeSection />
 					</div>
 
-					<img src='./waves-1.svg' style={{height: 'auto', width: '100%' }} />
+					<img src='./waves-1.svg' style={{ height: 'auto', width: '100%' }} />
 				</div>
 
 				<section
@@ -85,7 +85,7 @@ const App = () => {
 					<div
 						style={{
 							width: '100%',
-							maxWidth: '1200px',
+							maxWidth: '1200px'
 						}}
 					>
 						<SkillsSection />
@@ -107,7 +107,7 @@ const App = () => {
 					<div
 						style={{
 							width: '100%',
-							maxWidth: '1200px',
+							maxWidth: '1200px'
 						}}
 					>
 						<ProjectsSection />
@@ -123,13 +123,13 @@ const App = () => {
 						display: 'flex',
 						flexDirection: 'column',
 						alignItems: 'center',
-                        paddingBottom: '25vh'
+						paddingBottom: '25vh'
 					}}
 				>
 					<div
 						style={{
 							width: '100%',
-							maxWidth: '1200px',
+							maxWidth: '1200px'
 						}}
 					>
 						<AboutSection />
@@ -141,10 +141,10 @@ const App = () => {
 			<div
 				style={{
 					width: '100%',
-					background: '#2b666e',
+					background: '#2b666e'
 				}}
 			>
-                <Footer />
+				<Footer />
 			</div>
 		</div>
 	);
