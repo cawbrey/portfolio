@@ -27,7 +27,8 @@ const AboutSection = () => {
 					background: '#538b93', // White background for the bubble
 					borderRadius: '30px', // Makes it a bubble shape
 					boxShadow: '0 0px 8px rgba(0, 0, 0, 0.4)', // Subtle shadow for the bubble
-					fontSize: '1.1rem' // Larger text size for readability
+					fontSize: '1.1rem', // Larger text size for readability
+					position: 'relative' // Added to contain the absolute-positioned button
 				}}
 			>
 				<p
@@ -48,36 +49,38 @@ const AboutSection = () => {
 					and infrastructure. I thrive on the constant learning and problem-solving challenges that come with
 					this field, and I am always eager to expand my knowledge and skill set.
 				</p>
-			</div>
 
-			{/* Resume Link */}
-			<div
-				style={{
-					marginTop: '-10px',
-					marginRight: '-60vw'
-				}}
-			>
-				<a
-					href='Carter Awbrey - Resume.pdf' // Replace with the path to your resume
-					target='_blank'
-					rel='noopener noreferrer'
+				{/* Resume Link */}
+				<div
 					style={{
-						textDecoration: 'none',
-						fontSize: '1.2rem',
-						color: '#b7f6ff', // Text color
-						backgroundColor: '#538b93', // Button background
-						fontWeight: 'bold',
-						padding: '10px 20px',
-						border: '3px solid #b7f6ff', // Border around the button
-						borderRadius: '30px', // Rounded corners for the button
-						boxShadow: '0 0px 8px rgba(0, 0, 0, 0.9)', // Subtle shadow for the bubble
-						transition: 'transform 0.3s ease-in-out' // Smooth transition for hover
+						position: 'absolute',
+						bottom: '-24px',
+						right: '20px'
 					}}
-					onMouseEnter={e => (e.target.style.transform = 'scale(1.2)')} // Increase size on hover
-					onMouseLeave={e => (e.target.style.transform = 'scale(1)')} // Reset size when hover ends
 				>
-					My Resume
-				</a>
+					<a
+						href='Carter Awbrey - Resume.pdf' // Replace with the path to your resume
+						target='_blank'
+						rel='noopener noreferrer'
+						style={{
+							display: 'inline-block',
+							textDecoration: 'none',
+							fontSize: '1.2rem',
+							color: '#b7f6ff', // Text color
+							backgroundColor: '#538b93', // Button background
+							fontWeight: 'bold',
+							padding: '10px 20px',
+							border: '3px solid #b7f6ff', // Border around the button
+							borderRadius: '30px', // Rounded corners for the button
+							boxShadow: '0 0px 8px rgba(0, 0, 0, 0.9)', // Subtle shadow for the bubble
+							transition: 'transform 0.3s ease-in-out' // Smooth transition for hover
+						}}
+						onMouseEnter={e => (e.target.style.transform = 'scale(1.1)')} // Increase size on hover
+						onMouseLeave={e => (e.target.style.transform = 'scale(1)')} // Reset size when hover ends
+					>
+						My Resume
+					</a>
+				</div>
 			</div>
 		</section>
 	);
